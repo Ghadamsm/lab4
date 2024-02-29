@@ -1,0 +1,27 @@
+public class Rectangle extends Shape{
+
+    private double height ;
+    private double width ;
+
+
+
+    Rectangle(int x, int y , double height , double width) {
+        super(x, y);
+
+        this.width = width ;
+        this.height = height ;
+    }
+
+
+
+
+    @Override
+    public double calculateArea() {
+        return height * width ;
+    }
+
+    @Override
+    public double calculateCircumference() {
+        return 2 * (height + width);
+    }
+}
